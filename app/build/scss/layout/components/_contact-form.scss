@@ -78,6 +78,7 @@ a{
     .form-control{
         width:100% ;
         border: none;
+        border-radius: 6px;
         height: 3rem;
         border-color: v.$primario;
         color: rgb(27, 27, 27);
@@ -91,6 +92,7 @@ a{
     }
     .form-control2{
         width:100% ;
+        border-radius: 6px;
         border: none;
         height: 10rem;
         color: rgb(27, 27, 27);
@@ -139,4 +141,5 @@ a{
     color: v.$blanco;
     width: 20rem;
     margin: 1rem auto;
+    border-radius: 6px;
 }

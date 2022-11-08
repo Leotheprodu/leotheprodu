@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     height: 6rem;
+    
     @include m.tablet {
         justify-content: left;
     }

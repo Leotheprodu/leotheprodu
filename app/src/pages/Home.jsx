@@ -1,5 +1,6 @@
+import { IconMoodSmile } from '@tabler/icons';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { WordsOfTheTeam, SimpleText, FormulariodeContacto } from '../components';
+import { WordsOfTheTeam, SimpleText, FormulariodeContacto, Portfolio } from '../components';
 
 export function HomePage() {
 
@@ -8,9 +9,9 @@ export function HomePage() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>LeotheProdu | Home</title>
+          <title>LeotheProdu | Portfolio</title>
           <meta name="description" content="I'm LeotheProdu, a music producer and web developer and this is my portfolio." />
-          <meta property="og:title" content="LeotheProdu | Home" />
+          <meta property="og:title" content="LeotheProdu | Portfolio" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://leotheprodu.com/" />
           <meta property="og:image" content="https://flproductionscr.com/build_main/img/leo-serrano1.webp" />
@@ -19,15 +20,12 @@ export function HomePage() {
         </Helmet>
 
         <div className='contenedor acerca-de-nosotros'>
-          <SimpleText 
-            titulo='This is my Portfolio' 
-            texto={<p>Thanks for visit, I hope that you like it!.</p>} 
-          />
+
 
           <WordsOfTheTeam 
             titulo={'Hi!'}
 
-            texto="This is me, Leo, I'm a music producer for more than 10 years, and a multi-instrumentalist musician since childhood. My wife, daughter and me live in Siquirres of Limon, Costa Rica I have always been passionate about technology but in the last months I have started to study web development and definitely want to keep doing it, I just love it, on this website I want to show you some of my work, so little by little I will upload my progress, any feedback or if you want me to work for you, just contact me! "
+            texto="It's me, Leo, I'm a music producer for more than 10 years, and a multi-instrumentalist musician since childhood. My wife, daughter and me live in Siquirres of Limon, Costa Rica I have always been passionate about technology but in the last months I have started to study web development and definitely want to keep doing it, I just love it, on this website I want to show you some of my work, so little by little I will upload my progress, any feedback or if you want me to work for you, just contact me! "
             nombre='Leo Serrano'
             puesto='Web Developer'
             foto='https://flproductionscr.com/build_main/img/leo-serrano1.webp'
@@ -36,6 +34,17 @@ export function HomePage() {
 
         </div>{/* seccion 2 Acerca de Nosotros */}
 
+        <div className='contenedor2'>
+
+          <SimpleText 
+          tipo={1}
+            titulo='...this is my Portfolio' 
+            texto={<p>I hope that you like it! {<IconMoodSmile />}</p>} 
+          />
+
+          <Portfolio />
+
+        </div>
         <h3 className="inicio__contact-form__title">Contact me</h3>
         <div className='inicio__contact-Form'>
           <svg className='pagelayer-svg'>

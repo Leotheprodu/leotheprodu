@@ -32,7 +32,7 @@ export function Root() {
           propertyId="6369b59cb0d6371309cdd71e"
           widgetId="1ghaeqrnt"/> */}
       </div>
-      <div>
+      <div >
         <Footer />
       </div>
       </>

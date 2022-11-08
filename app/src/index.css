@@ -343,6 +343,11 @@ p {
   margin: 0 auto;
 }
 
+.contenedor2 {
+  width: 97%;
+  margin: 0 auto;
+}
+
 .contenedor-main {
   min-height: 100vh;
   position: relative;
@@ -638,6 +643,7 @@ img {
 .formulario .form-control {
   width: 100%;
   border: none;
+  border-radius: 6px;
   height: 3rem;
   border-color: #282B28;
   color: rgb(27, 27, 27);
@@ -651,6 +657,7 @@ img {
 }
 .formulario .form-control2 {
   width: 100%;
+  border-radius: 6px;
   border: none;
   height: 10rem;
   color: rgb(27, 27, 27);
@@ -698,6 +705,7 @@ img {
   color: #FFFFFF;
   width: 20rem;
   margin: 1rem auto;
+  border-radius: 6px;
 }
 
 .header {
@@ -831,7 +839,7 @@ img {
 }
 
 .footer {
-  background-color: #282B28;
+  background-color: #3E5641;
   height: 8rem;
   width: 100%;
 }
@@ -870,6 +878,50 @@ img {
   color: #D36135;
 }
 
+.portfolio__item {
+  width: 40rem;
+  border-radius: 1rem;
+  background-color: #282B28;
+  padding: 1rem;
+  margin: 1rem;
+  transition: 1s;
+  cursor: pointer;
+}
+.portfolio__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0.1rem 0.2rem 0.8rem 0.2rem rgba(0, 0, 0, 0.562);
+}
+
+.portfolio__img {
+  overflow: hidden;
+}
+.portfolio__img img {
+  border-radius: 1rem;
+  transition: 4s;
+}
+.portfolio__img img:hover {
+  transform: scale(1.2);
+}
+
+.portfolio__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.portfolio__text h3 {
+  color: #83BCA9;
+  margin: 0;
+}
+.portfolio__text p {
+  color: #FFFFFF;
+}
+
+.portfolio__practice-projects {
+  display: flex;
+  flex-flow: wrap;
+}
+
 .inicio_info1_servicios-cards {
   display: grid;
   padding: 1rem;
@@ -884,6 +936,7 @@ img {
 
 .acerca-de-nosotros {
   scroll-snap-align: center;
+  margin-top: 10rem;
 }
 
 .inicio__contact-form__title {

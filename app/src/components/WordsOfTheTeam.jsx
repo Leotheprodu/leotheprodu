@@ -1,37 +1,12 @@
 import PropTypes from 'prop-types'
-import { useEffect, useRef } from 'react';
+
 
 export function WordsOfTheTeam({titulo, texto, nombre, puesto, foto, firma}) {
 
-  const ref = useRef(null);
-
-    useEffect(() => {
-      const ElementWithFX = ref.current;
-      
-
-      function mostrarScroll(){
-        const scrollTop = document.documentElement.scrollTop;
-        const alturaElemento = ElementWithFX.offsetTop;
-
-        if (alturaElemento - 200 < scrollTop) {
-          ElementWithFX.style.opacity = 1;
-          ElementWithFX.classList.add('fxMostrarArriba');
-          
-        }
-      }     
-      if (ElementWithFX !== null){
-        document.addEventListener('scroll',mostrarScroll);
-      }
-      
-      return () => {
-        document.removeEventListener('scroll',mostrarScroll);
-      }
-
-      
-    },[]);
+  
 
     return(
-      <div ref={ref} className='palabras-del-equipo fxElement'>
+      <div className='palabras-del-equipo'>
         <div className='palabras-del-equipo_foto'>
 
           <img src={foto} alt={nombre} />

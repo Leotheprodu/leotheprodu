@@ -5,3 +5,5 @@ export * from './contact-form';
 export * from './contact-info';
 export * from './header';
 export * from './header__nav';
+export * from './portfolio-item';
+export * from './portfolio';

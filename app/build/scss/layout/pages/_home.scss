@@ -13,6 +13,7 @@
 }
 .acerca-de-nosotros{
     scroll-snap-align: center;
+    margin-top: 10rem;
 }
 .inicio__contact-form__title{
     text-align: center;
@@ -21,6 +22,7 @@
     color: v.$negro;
     font-size: 4rem;
     margin-top: 4rem;
+
     
 }
 
@@ -32,6 +34,8 @@
     background-attachment:fixed;
     scroll-snap-align: center;
     overflow: hidden;
+    
+    
     svg{
         transform: scale(1.2)
     }

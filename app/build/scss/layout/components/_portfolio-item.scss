@@ -1,0 +1,39 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.portfolio__item{
+    width: 40rem;
+    border-radius: 1rem;
+    background-color: v.$primario;
+    padding: 1rem;
+    margin: 1rem;
+    transition: 1s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: .1rem .2rem .8rem .2rem rgba(0, 0, 0, 0.562);
+    }
+}
+.portfolio__img{
+    overflow: hidden;
+    img{
+        border-radius: 1rem;
+        transition: 4s;
+        &:hover{
+            transform: scale(1.2); 
+        }
+    }
+}
+.portfolio__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    h3{
+        color: v.$terciario;
+        margin: 0;
+    }
+    p{
+        color: v.$blanco;
+    }
+}
