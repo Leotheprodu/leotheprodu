@@ -1,0 +1,93 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.header__nav {
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    background-color: v.$primario;
+    color: v.$terciario;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    @include m.tablet {
+        justify-content: left;
+    }
+    
+
+    .header__web-tittle{
+        display: flex;
+        color: v.$secundario;
+        @include m.tablet {
+            padding-left: 2rem;
+            
+        }
+        
+        h3{
+            margin: 0;
+            
+        }
+        
+    }
+
+}
+.header__container_dyn-txt{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    padding-top: 0.3rem;
+    justify-content: left;
+}
+
+.header__dynamic-txts{
+    
+    margin: 0;
+    height: 4rem;
+    overflow: hidden;
+    padding-right: 2rem;
+}
+
+.header__dynamic-txts li{
+    list-style: none;
+    color: v.$terciario;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite; /* steps son el conteo de letras del texto mas largo */
+}
+
+@keyframes slide {
+    100% {
+       top: -16rem;
+    }
+}
+
+
+.header__dynamic-txts li span{
+    position: relative;
+    line-height: 4rem;
+}
+
+
+    .header__dynamic-txts li span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 150%;
+        width: 110%;
+        background: v.$primario;
+        border-left: 0.3rem solid v.$terciario;
+        animation: typing 3s steps(9) infinite; /* steps son el conteo de letras del texto mas largo */
+    }
+    
+    @keyframes typing {
+        40%, 60% {
+            left: calc(100%);
+        }
+        100% {
+            left: 0;
+        }
+    }
