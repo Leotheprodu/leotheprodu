@@ -6,38 +6,53 @@ export const Portfolio = () => {
 
   return (
     <>
-        <h2>Personal Projects</h2>
+        <h2 className="portfolio__tittle">Personal Projects</h2>
 
         <div className="portfolio__personal-projects">
-
         {
-            personalPortfolio.map(({ name ,thumbnail, shortDescription})=>(
+            personalPortfolio.map(({ name,thumbnail,shortDescription,link,Type,linkGithub,fullDescription,usedTechnologies})=>(
                 <PortfolioItem 
                 name={name}
                 thumbnail={thumbnail}
                 shortDescription={shortDescription}
                 key={name}
+                fullDescription={fullDescription}
+                Type= {Type}
+                link={link}
+                linkGithub={linkGithub}
+                usedTechnologies={usedTechnologies}
                 />
             ))
 
         }
+
         </div>
 
-        <h2>Just for Practice</h2>
 
+        <h2 className="portfolio__tittle">Just for Practice</h2>
         <div className="portfolio__practice-projects">
 
-        {
-            practicePortfolio.map(({ name ,thumbnail, shortDescription})=>(
-                <PortfolioItem 
-                name={name}
-                thumbnail={thumbnail}
-                shortDescription={shortDescription}
-                key={name}
-                />
-            ))
+            {
+                practicePortfolio.map(({ name,thumbnail,shortDescription,link,Type,linkGithub,fullDescription,usedTechnologies})=>(
+                    
 
-        }
+                    <PortfolioItem 
+                    name={name}
+                    thumbnail={thumbnail}
+                    shortDescription={shortDescription}
+                    key={name}
+                    fullDescription={fullDescription}
+                    Type= {Type}
+                    link={link}
+                    linkGithub={linkGithub}
+                    usedTechnologies={usedTechnologies}
+
+                    />
+                    
+                ))
+
+            }
+        
         </div>
     </>
   )

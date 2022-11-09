@@ -1,9 +1,16 @@
 import { IconMoodSmile } from '@tabler/icons';
+import { useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { WordsOfTheTeam, SimpleText, FormulariodeContacto, Portfolio } from '../components';
 
 export function HomePage() {
 
+const [showHire, setshowHire] = useState(false);
+function changeHire(){
+  showHire && setshowHire(false);
+  !showHire && setshowHire(true);
+  console.log(showHire);
+}
   return(
     
     <>
@@ -45,7 +52,14 @@ export function HomePage() {
           <Portfolio />
 
         </div>
-        <h3 className="inicio__contact-form__title">Contact me</h3>
+
+        <div  className="contenedor inicio__contact-form__title">
+          {showHire && 
+            <h3 onMouseOut={()=> changeHire} onMouseOver={()=> changeHire} className='inicio__contact-form__title__hidden-word'>Hire</h3> 
+          }
+          <h3 ><span>Contact </span> me</h3>
+        </div>
+        
         <div className='inicio__contact-Form'>
           <svg className='pagelayer-svg'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">

@@ -2,9 +2,27 @@
 @use 'base/variables' as v;
 
 .portfolio__personal-projects{
-
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    @include m.tablet {
+        justify-content:left;
+    }
 }
 .portfolio__practice-projects{
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
+    @include m.tablet {
+        justify-content:left;
+    }
+}
+.portfolio__tittle{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    @include m.tablet {
+        justify-content:left;
+    }
+    
 }

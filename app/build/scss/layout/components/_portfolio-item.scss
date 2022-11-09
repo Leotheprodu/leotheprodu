@@ -2,7 +2,8 @@
 @use 'base/variables' as v;
 
 .portfolio__item{
-    width: 40rem;
+    max-width: 40rem;
+    max-height: 50rem;
     border-radius: 1rem;
     background-color: v.$primario;
     padding: 1rem;
@@ -13,9 +14,15 @@
         transform: scale(1.05);
         box-shadow: .1rem .2rem .8rem .2rem rgba(0, 0, 0, 0.562);
     }
+    
+    @include m.tablet {
+        
+        
+    }
 }
 .portfolio__img{
     overflow: hidden;
+    
     img{
         border-radius: 1rem;
         transition: 4s;
@@ -28,12 +35,79 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
     h3{
         color: v.$terciario;
         margin: 0;
+        margin-top: 1rem;
+        font-size: 2.4rem;
     }
     p{
         color: v.$blanco;
+    }
+}
+.portfolio-click{
+    
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    color: v.$blanco;
+    span{
+        color: v.$secundario;
+    }
+    p,h3,h5{
+        color: v.$blanco;
+
+    }
+    h4{
+        color: v.$cuaternario;
+        text-align: center;
+        margin-top: 5rem;
+    }
+}
+.portfolio-click-blur{
+    scale: 1.01;
+    backdrop-filter: brightness(25%) blur(5px); 
+    height: 100%;
+}
+.portfolio__links-click__main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.portfolio__links-click{
+transition: 1s;
+    &:hover{
+        transform: scale(1.1);
+        color: v.$cuaternario;
+        filter: drop-shadow(.5px 1px 4px v.$blanco);
+    }
+   
+}
+
+.portfolio__links-click__icon{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    color: v.$terciario;
+    transition: 3s;
+    &:hover{
+        transform: scale(1.1);
+        color: v.$secundario;
+    }
+}
+.portfolio__links-click__text{
+    h3{
+        font-size: 2rem;
+        text-align: center;
+        color: v.$terciario;
+        transition: 3s;
+        &:hover{
+            transform: scale(1.1);
+            color: v.$secundario;
+        }
     }
 }

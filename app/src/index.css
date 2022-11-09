@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -321,7 +321,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
 body.fijar-body {
@@ -879,7 +879,8 @@ img {
 }
 
 .portfolio__item {
-  width: 40rem;
+  max-width: 40rem;
+  max-height: 50rem;
   border-radius: 1rem;
   background-color: #282B28;
   padding: 1rem;
@@ -891,7 +892,6 @@ img {
   transform: scale(1.05);
   box-shadow: 0.1rem 0.2rem 0.8rem 0.2rem rgba(0, 0, 0, 0.562);
 }
-
 .portfolio__img {
   overflow: hidden;
 }
@@ -907,19 +907,112 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
 }
 .portfolio__text h3 {
   color: #83BCA9;
   margin: 0;
+  margin-top: 1rem;
+  font-size: 2.4rem;
 }
 .portfolio__text p {
   color: #FFFFFF;
 }
 
+.portfolio-click {
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: #FFFFFF;
+}
+.portfolio-click span {
+  color: #D36135;
+}
+.portfolio-click p, .portfolio-click h3, .portfolio-click h5 {
+  color: #FFFFFF;
+}
+.portfolio-click h4 {
+  color: #A24936;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.portfolio-click-blur {
+  scale: 1.01;
+  backdrop-filter: brightness(25%) blur(5px);
+  height: 100%;
+}
+
+.portfolio__links-click__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio__links-click {
+  transition: 1s;
+}
+.portfolio__links-click:hover {
+  transform: scale(1.1);
+  color: #A24936;
+  filter: drop-shadow(0.5px 1px 4px #FFFFFF);
+}
+
+.portfolio__links-click__icon {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #83BCA9;
+  transition: 3s;
+}
+.portfolio__links-click__icon:hover {
+  transform: scale(1.1);
+  color: #D36135;
+}
+
+.portfolio__links-click__text h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #83BCA9;
+  transition: 3s;
+}
+.portfolio__links-click__text h3:hover {
+  transform: scale(1.1);
+  color: #D36135;
+}
+
+.portfolio__personal-projects {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .portfolio__personal-projects {
+    justify-content: left;
+  }
+}
+
 .portfolio__practice-projects {
   display: flex;
   flex-flow: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .portfolio__practice-projects {
+    justify-content: left;
+  }
+}
+
+.portfolio__tittle {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+@media (min-width: 768px) {
+  .portfolio__tittle {
+    justify-content: left;
+  }
 }
 
 .inicio_info1_servicios-cards {
@@ -940,12 +1033,23 @@ img {
 }
 
 .inicio__contact-form__title {
-  text-align: center;
-  margin-bottom: 1rem;
+  width: 70%;
+  margin: 14rem auto 0 auto;
   text-transform: uppercase;
   color: #000000;
   font-size: 4rem;
-  margin-top: 4rem;
+  transition: 3s;
+  display: flex;
+  justify-content: center;
+}
+.inicio__contact-form__title h3 {
+  text-align: center;
+}
+.inicio__contact-form__title span:hover {
+  text-decoration: line-through;
+}
+.inicio__contact-form__title:hover {
+  transform: scale(1.15);
 }
 
 .inicio__contact-Form {
