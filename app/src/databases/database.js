@@ -19,7 +19,7 @@ export const practicePortfolio = [
         link: 'https://leotheprodu.github.io/gif-expert-app/',
         linkGithub: 'https://github.com/Leotheprodu/gif-expert-app',
         thumbnail: 'https://leotheprodu.com/images/img/thumbnail-gifexpertapp.webp',
-        shortDescription: 'With this project i practice the use of React, async functions, fetch API, hooks. ',
+        shortDescription: 'With this project I practice the hooks of React, async functions, fetch API, and more. ',
         fullDescription: 'I Learned how to make my own hooks in react, was the first time using Yarn and Vite, and the states of react and much more.',
         usedTechnologies: ['Javascript', 'HTML', 'React', 'Yarn', 'Vite', ]
         

@@ -14,7 +14,7 @@ export function Footer () {
 
             <div className="footer_content">
                 
-            <p><span>© 2013 - {actualYear} - </span> LeotheProdu</p>
+            <p><span>©{actualYear} </span>-  LeotheProdu</p>
             
             <SocialIcons size={25} />
 
