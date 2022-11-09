@@ -28,9 +28,9 @@ export function Root() {
       
       </div>
       <div>
-        {/* <TawkMessengerReact
+        <TawkMessengerReact
           propertyId="6369b59cb0d6371309cdd71e"
-          widgetId="1ghaeqrnt"/> */}
+          widgetId="1ghaeqrnt"/>
       </div>
       <div >
         <Footer />

@@ -66,6 +66,17 @@ export const PortfolioItem = ({name,thumbnail,shortDescription,link,Type,linkGit
                                 <div>
                                     <h5>Project Type: <span>{Type}</span></h5>
                                     <p>{fullDescription}</p>
+
+                                    <h5>Technology used <span>in this project:</span></h5>
+                                    <div className="portfolio__text__tech-used">
+                                        {
+                                            usedTechnologies.map((i) =>(
+                                                <p key={i}>{i},</p>
+                                            ))
+                                        }
+                                    </div>
+                                    
+                                    
                                 </div>
 
                                 <h4>Click below for more detalis</h4>

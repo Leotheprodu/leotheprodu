@@ -2,7 +2,7 @@
 export const personalPortfolio = [
     {
         name: 'FLProductions',
-        Type: 'Web Application',
+        Type: 'Personal Web Application',
         link: 'https://flproductionscr.com/',
         linkGithub: 'https://github.com/Leotheprodu/flproductions',
         thumbnail: 'https://leotheprodu.com/images/img/thumbnail-flproductions.avif',

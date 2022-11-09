@@ -880,7 +880,7 @@ img {
 
 .portfolio__item {
   max-width: 40rem;
-  max-height: 50rem;
+  max-height: 60rem;
   border-radius: 1rem;
   background-color: #282B28;
   padding: 1rem;
@@ -982,6 +982,15 @@ img {
   color: #D36135;
 }
 
+.portfolio__text__tech-used {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.portfolio__text__tech-used p {
+  margin: 0;
+}
+
 .portfolio__personal-projects {
   display: flex;
   flex-flow: wrap;
@@ -1041,9 +1050,11 @@ img {
   transition: 3s;
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 .inicio__contact-form__title h3 {
   text-align: center;
+  cursor: pointer;
 }
 .inicio__contact-form__title span:hover {
   text-decoration: line-through;
@@ -1067,6 +1078,10 @@ img {
 
 .inicio__Caracteristicas {
   scroll-snap-align: center;
+}
+
+.inicio__contact-form__title__hidden-word {
+  margin-bottom: 0;
 }
 
 .root-socialIcons {

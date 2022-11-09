@@ -1,4 +1,4 @@
-import { IconMoodSmile } from '@tabler/icons';
+import { IconCheck, IconMoodSmile } from '@tabler/icons';
 import { useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { WordsOfTheTeam, SimpleText, FormulariodeContacto, Portfolio } from '../components';
@@ -9,7 +9,6 @@ const [showHire, setshowHire] = useState(false);
 function changeHire(){
   showHire && setshowHire(false);
   !showHire && setshowHire(true);
-  console.log(showHire);
 }
   return(
     
@@ -54,11 +53,11 @@ function changeHire(){
         </div>
 
         <div  className="contenedor inicio__contact-form__title">
-          {showHire && 
-            <h3 onMouseOut={()=> changeHire} onMouseOver={()=> changeHire} className='inicio__contact-form__title__hidden-word'>Hire</h3> 
-          }
-          <h3 ><span>Contact </span> me</h3>
-        </div>
+          {showHire && <h3 onClick={changeHire} className='inicio__contact-form__title__hidden-word'>Hire </h3> }
+           
+            <h3 onClick={changeHire}>{!showHire &&<span>Contact </span>} me{showHire && <IconCheck size={20} color={'#A24936'} stroke={5}/>}</h3>
+          
+          </div>
         
         <div className='inicio__contact-Form'>
           <svg className='pagelayer-svg'>

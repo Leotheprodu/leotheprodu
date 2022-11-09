@@ -38,7 +38,6 @@ export function FormulariodeContacto() {
           } 
           );
           
-          /* console.log(conFom); */
         }else setFormStatus('Por favor acepta el captcha');
         
       }
@@ -111,7 +110,7 @@ export function FormulariodeContacto() {
               <div className="recaptcha">
                 <ReCAPTCHA 
                   ref={captcha}
-                  sitekey="6LdqhcAiAAAAAE8hwgEptpxIcQHsW_c2S_AfkFmw"
+                  sitekey="6Ldu8O4iAAAAANdaKiQsqSD1IRjDfCHjEZ-ulGiE"
                   onChange={onChange}
                 />
               </div>
