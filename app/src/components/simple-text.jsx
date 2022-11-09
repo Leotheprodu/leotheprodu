@@ -15,12 +15,12 @@ export function SimpleText({titulo,texto,tipo}) {
 
         if (alturaElemento - 200 < scrollTop) {
           ElementWithFX.style.opacity = 1;
-          ElementWithFX.classList.add('fxMostrarIzquierda');
+          ElementWithFX.classList.add('fxMostrarArriba');
           
         }
       }     
       if (ElementWithFX !== null){
-        document.addEventListener('scroll',mostrarScroll);
+        document.addEventListener('scroll',mostrarScroll); 
       }
       
       return () => {

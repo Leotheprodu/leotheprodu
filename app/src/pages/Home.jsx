@@ -1,4 +1,4 @@
-import { IconCheck, IconMoodSmile } from '@tabler/icons';
+import { IconCheck, IconHeart, IconMoodSmile } from '@tabler/icons';
 import { useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { WordsOfTheTeam, SimpleText, FormulariodeContacto, Portfolio } from '../components';
@@ -44,14 +44,24 @@ function changeHire(){
 
           <SimpleText 
           tipo={1}
-            titulo='...this is my Portfolio' 
-            texto={<p>I hope that you like it! {<IconMoodSmile />}</p>} 
+            titulo='this is my Portfolio' 
+            texto={<p>...I hope that you like it! {<IconMoodSmile />}</p>} 
           />
 
           <Portfolio />
 
         </div>
-
+          <div>
+          <SimpleText 
+            titulo='...I hope I have been able to convey how much I like this' 
+            texto={
+              <>
+              <p>These are some projects but every day I practice, study and learn about 8 hours so in the coming days I'm going to upload more projects. </p>
+              <p>this happens because I {<IconHeart color='#A24936' stroke={3}/>} it!, I can't wait for someone to give me the opportunity to work full time!</p>
+              </>
+          } 
+          />
+          </div>
         <div  className="contenedor inicio__contact-form__title">
           {showHire && <h3 onClick={changeHire} className='inicio__contact-form__title__hidden-word'>Hire </h3> }
            

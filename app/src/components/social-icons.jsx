@@ -1,4 +1,4 @@
-import { IconBrandGithub, IconBrandInstagram, IconBrandTwitter } from '@tabler/icons';
+import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandTwitter } from '@tabler/icons';
 import PropTypes from 'prop-types'
 
 export function SocialIcons({size, stroke, claseCSS}) {
@@ -23,8 +23,8 @@ export function SocialIcons({size, stroke, claseCSS}) {
                     stroke={stroke}  // set `stroke-width`
                 />
             </a>
-            <a href="https://www.instagram.com/leotheprodu/" target="_blank">
-                <IconBrandInstagram 
+            <a href="https://www.linkedin.com/in/leonardo-serrano-alfaro-1b067679/" target="_blank">
+                <IconBrandLinkedin 
                     className={'social-icon'+' '+claseCSS}
                     size={size} // set custom `width` and `height`
                     stroke={stroke}  // set `stroke-width`

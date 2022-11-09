@@ -79,7 +79,7 @@ export const PortfolioItem = ({name,thumbnail,shortDescription,link,Type,linkGit
                                     
                                 </div>
 
-                                <h4>Click below for more detalis</h4>
+                                <h4>Click below for more details</h4>
                                 <div className="portfolio__links-click__main">
 
                                     <a href={link} target='_blank'>
