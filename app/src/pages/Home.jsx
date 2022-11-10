@@ -31,7 +31,7 @@ function changeHire(){
           <WordsOfTheTeam 
             titulo={'Hi!'}
 
-            texto="It's me, Leo, I'm a music producer for more than 10 years, and a multi-instrumentalist musician since childhood. My wife, daughter and me live in Siquirres of Limon, Costa Rica I have always been passionate about technology but in the last months I have started to study web development and definitely want to keep doing it, I just love it, on this website I want to show you some of my work, so little by little I will upload my progress, any feedback or if you want me to work for you, just contact me! "
+            texto="It's me, Leo. I'm a music producer with over ten years of experience and have played multiple instruments since I was a child. I live in Siquirres, Limon, Costa Rica, with my family. I have always been passionate about technology; I love it, so in the last few months I have studied web development as an additional service in my portfolio. On this website, I will show you some of my work, so if you want me to work for you, I am here for you!"
             nombre='Leo Serrano'
             puesto='Web Developer'
             foto='https://flproductionscr.com/build_main/img/leo-serrano1.webp'
@@ -45,7 +45,7 @@ function changeHire(){
           <SimpleText 
           tipo={1}
             titulo='this is my Portfolio' 
-            texto={<p>...I hope that you like it! {<IconMoodSmile />}</p>} 
+            texto={<p>...I hope you like it! {<IconMoodSmile />}</p>} 
           />
 
           <Portfolio />
@@ -53,18 +53,18 @@ function changeHire(){
         </div>
           <div>
           <SimpleText 
-            titulo='...I hope I have been able to convey how much I like this' 
+            titulo='...I hope I have been able to convey how much I like this.' 
             texto={
               <>
-              <p>These are some projects but every day I practice, study and learn about 8 hours so in the coming days I'm going to upload more projects. </p>
-              <p>this happens because I {<IconHeart color='#A24936' stroke={3}/>} it!, I can't wait for someone to give me the opportunity to work full time!</p>
+              <p>These are some projects, but each day I practice, study, and learn for about 8 hours, so in the coming days I'll upload more projects.</p>
+              <p>This happens because I {<IconHeart color='#A24936' stroke={3}/>} it! I can't wait for someone to give me the opportunity to work full-time!</p>
               </>
           } 
           />
           </div>
         <div  className="contenedor inicio__contact-form__title">
           {showHire && <h3 onClick={changeHire} className='inicio__contact-form__title__hidden-word'>Hire </h3> }
-           
+          
             <h3 onClick={changeHire}>{!showHire &&<span>Contact </span>} me{showHire && <IconCheck size={20} color={'#A24936'} stroke={5}/>}</h3>
           
           </div>
